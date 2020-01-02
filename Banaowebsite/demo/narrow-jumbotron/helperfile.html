@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+     .button li{
+     	display:block;
+	width:35%;
+	
+	margin-top: 100px;
+     }
+     body{
+     	background-color: rgba(0,0,0,0.5);
+     }
+     .b li{
+     	float: left;
+     	margin:20px; 
+     }
+</style>
+<script>
+function goBack() {
+  window.history.back()
+}
+</script>
+</head>
+<body>
+	<ul class="b">
+	<li><button onclick="goBack()" style="font-weight: bold; background: #4285F4; color: #000;">Go Back</button></li>
+	<li><button onclick="window.location.href='index.html'" style="font-weight: bold; background: #4285F4; color: #000;">Main page</button></li>
+	</ul>
+<ul class="button">
+	<li>
+	<form>
+<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="HTML" onclick="window.location.href='narrow_jumbotron1.html'" />
+</form>
+</li>
+<li>
+<form>
+<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="CSS" onclick="window.location.href='narrow_jumbotron1_css.html'" />
+</form>
+</li>
+
+</ul>
+
+</body>
+</html>

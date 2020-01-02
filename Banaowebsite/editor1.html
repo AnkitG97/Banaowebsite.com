@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <base href="">
+    <title>VvvebJs</title>
+    <link href="css/editor.css" rel="stylesheet">
+    <link href="css/line-awesome.css" rel="stylesheet">
+  </head>
+<body style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Images/bg2.jpg);">
+
+	  <script>
+         $(".la la-lg la-image").draggable ({
+            containment : "#iframe1"
+         });
+         
+      </script>
+
+
+	<div id="vvveb-builder" >
+				<div id="left-panel">
+					  <div class="drag-elements">
+
+						<div class="header">		
+
+<!---------------------------------------------COMPONENTS AND BLOCKS-------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+							<ul class="nav nav-tabs" id="elements-tabs" role="tablist">
+							  <li class="nav-item component-tab">
+								<a class="nav-link active" id="components-tab" data-toggle="tab" href="#components" role="tab" aria-controls="components" aria-selected="true"><i class="la la-lg la-cube"></i> <div><small>Components</small></div></a>
+							  </li>
+
+
+							  <li class="nav-item blocks-tab">
+								<a class="nav-link" id="blocks-tab" data-toggle="tab" href="#blocks" role="tab" aria-controls="blocks" aria-selected="false"><i class="la la-lg la-image"></i> <div><small>Blocks</small></div></a>
+							  </li>
+							</ul>
+
+<!---------------------------------------------COMPONENTS AND BLOCKS-----------ENDS--------------------------------------------------->
+
+<!------------------------------------------blocks and components options.------------------------------------------------------------------>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+							<div class="tab-content">
+
+							  <div class="tab-pane fade show active" id="components" role="tabpanel" aria-labelledby="components-tab">
+									<div class="drag-elements-sidepane sidepane">
+									  <div>  
+										<ul class="components-list clearfix" data-type="leftpanel"></ul>
+									  </div>
+									</div>
+							  </div>
+
+
+							  <div class="tab-pane fade" id="blocks" role="tabpanel" aria-labelledby="blocks-tab">
+									<div class="drag-elements-sidepane sidepane">
+									  <div>  
+										<ul class="blocks-list clearfix" data-type="leftpanel"></ul>
+									  </div>
+									</div>
+							  </div>
+
+
+							</div>
+<!------------------------------------------blocks and components options. ENDS------------------------------------------------------------------->
+
+						</div>	
+					  </div>
+				</div>	
+				<div id="canvas">
+					<div id="iframe-wrapper">
+						<div id="iframe-layer">
+							<div id="highlight-box">
+								<div id="highlight-name"></div>
+								<div id="section-actions">
+									<a id="add-section-btn" href="" title="Add element"><i class="la la-plus"></i></a>
+								</div>
+							</div>
+							<div id="select-box">
+								<div id="wysiwyg-editor">
+										<a id="bold-btn" href="" title="Bold"><i><strong>B</strong></i></a>
+										<a id="italic-btn" href="" title="Italic"><i>I</i></a>
+										<a id="underline-btn" href="" title="Underline"><u>u</u></a>
+										<a id="strike-btn" href="" title="Strikeout"><del>S</del></a>
+										<a id="link-btn" href="" title="Create link"><strong>a</strong></a>
+								</div>
+								<div id="select-actions">
+									<a id="drag-btn" href="" title="Drag element"><i class="la la-arrows"></i></a>
+									<a id="parent-btn" href="" title="Select parent"><i class="la la-level-down la-rotate-180"></i></a>
+									
+									<a id="up-btn" href="" title="Move element up"><i class="la la-arrow-up"></i></a>
+									<a id="down-btn" href="" title="Move element down"><i class="la la-arrow-down"></i></a>
+									<a id="clone-btn" href="" title="Clone element"><i class="la la-copy"></i></a>
+									<a id="delete-btn" href="" title="Remove element"><i class="la la-trash"></i></a>
+								</div>
+							</div>
+
+
+
+							<div id="add-section-box" class="drag-elements">
+									<div class="header">	
+
+<!---------------------------------------------COMPONENTS AND BLOCKS-------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+										<ul class="nav nav-tabs" id="box-elements-tabs" role="tablist">
+
+
+										  <li class="nav-item component-tab">
+											<a class="nav-link active" id="box-components-tab" data-toggle="tab" href="#box-components" role="tab" aria-controls="components" aria-selected="true"><i class="la la-lg la-cube"></i> <div><small>Components</small></div></a>
+										  </li>
+
+
+										  <li class="nav-item blocks-tab">
+											<a class="nav-link" id="box-blocks-tab" data-toggle="tab" href="#box-blocks" role="tab" aria-controls="blocks" aria-selected="false"><i class="la la-lg la-image"></i> <div><small>Blocks</small></div></a>
+										  </li>
+
+
+										</ul>
+
+<!---------------------------------------------COMPONENTS AND BLOCKS-----------ENDS--------------------------------------------------->
+
+										<div class="section-box-actions">
+											<div id="close-section-btn" class="btn btn-light btn-sm bg-white btn-sm float-right"><i class="la la-close"></i></div>
+											<div class="small mt-1 mr-3 float-right">
+												<div class="custom-control custom-radio custom-control-inline">
+												  <input type="radio" id="add-section-insert-mode-after" value="after" checked="checked" name="add-section-insert-mode" class="custom-control-input">
+												  <label class="custom-control-label" for="add-section-insert-mode-after">After</label>
+												</div>
+												<div class="custom-control custom-radio custom-control-inline">
+												  <input type="radio" id="add-section-insert-mode-inside" value="inside" name="add-section-insert-mode" class="custom-control-input">
+												  <label class="custom-control-label" for="add-section-insert-mode-inside">Inside</label>
+												</div>
+											</div>
+										</div>
+
+<!------------------------------------------blocks and components options.------------------------------------------------------------------>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+										<div class="tab-content">
+										  <div class="tab-pane fade show active" id="box-components" role="tabpanel" aria-labelledby="components-tab">
+												<div>
+												  <div> 
+													<ul class="components-list clearfix" data-type="addbox"></ul>
+												  </div>
+												</div>
+										  </div>
+										  <div class="tab-pane fade" id="box-blocks" role="tabpanel" aria-labelledby="blocks-tab">
+												<div>
+												  <div>  
+													<ul class="blocks-list clearfix"  data-type="addbox">
+													</ul>
+												  </div>
+												</div>
+										  </div>
+										</div>
+
+<!------------------------------------------blocks and components options. ENDS------------------------------------------------------------------->
+									</div>	
+							</div>
+						</div>
+						<iframe src="about:none" id="iframe1"></iframe>
+					</div>
+				</div>		
+			</div>
+		</div>	
+<!-- jquery-->
+<script src="js/jquery.min.js"></script>
+<!-- bootstrap-->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- builder code-->
+<script src="libs/builder/builder.js"></script>	
+<!-- undo manager-->
+<script src="libs/builder/undo.js"></script>	
+<!-- inputs-->
+<script src="libs/builder/inputs.js"></script>	
+<script src="libs/builder/components-bootstrap4.js"></script>	
+<script src="libs/builder/components-widgets.js"></script>
+<script src="libs/builder/blocks-bootstrap4.js"></script>
+<script>
+$(document).ready(function() 
+{
+	$("#vvveb-builder").addClass("no-right-panel");
+	Vvveb.Builder.init('demo/narrow-jumbotron/index.html', function() {
+		//run code after page/iframe is loaded
+	});
+});
+</script>
+</body>
+</html>

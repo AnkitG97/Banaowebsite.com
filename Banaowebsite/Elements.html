@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="js1.css">
+  <script type="text/javascript" src="js1.js"></script>
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#one">Input Controls <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#two">Navigational Components</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#three">InformationComponents</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#four">Containers</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div class="jumbotron text-center">
+  <h1>Common UI Elements</h1>
+  <!-- <p>Resize this responsive page to see the effect!</p>  -->
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div id ="one" class="col-lg-12">
+      <h3>Input Controls</h3>
+`
+      <ul class="list-group">
+        <li class="list-group-item">
+      <!-- Checkbox -->
+        <div class="wrap-collabsible">
+            <input id="collapsible" class="toggle" type="checkbox">
+            <label for="collapsible" class="lbl-toggle" tabindex="0">Checkbox</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+
+              
+              <table style="width:100%">
+                <td>
+                            <textbox>Checkboxes allow the user to select one or more options from a set. .</textbox>
+                          </td>
+                          <td>
+                             <img src="https://www.usability.gov/sites/default/files/images/u1.jpg" alt="W3Schools.com"> 
+                          </td>
+                          <td>
+                              
+                              <pre class="brush: html">
+  &lt;fieldset&gt;
+  &lt;legend&gt;Choose your interests&lt;/legend&gt;
+  &lt;div&gt;
+    &lt;input type="checkbox" id="coding" name="interest" value="coding"&gt;
+    &lt;label for="coding"&gt;Coding&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type="checkbox" id="music" name="interest" value="music"&gt;
+    &lt;label for="music"&gt;Music&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+</pre>
+
+
+
+                          </td>
+                          <td>
+                            <iframe name="Framename1" src="test.html" width="200" height="200" frameborder="10" scrolling="auto" class="frame-area">
+</iframe>
+                          </td>
+                    </tr></table>
+            </div>
+          </div>
+
+
+
+        </div>
+
+        </li>
+
+
+
+        <li class="list-group-item">
+      <!-- RadioButton -->
+        <div class="wrap-collabsible">
+
+            <input id="collapsible2" class="toggle" type="checkbox">
+            <label for="collapsible2" class="lbl-toggle" tabindex="0">Radio Button</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+                <table style="width:100%">
+                    <tr>
+                          <td>
+                            <textbox>Radio buttons are used to allow users to select one item at a time.</textbox>
+                          </td>
+                          <td>
+                             <img src="https://www.usability.gov/sites/default/files/images/u2.jpg" alt="W3Schools.com"> 
+                          </td>
+                          <td>
+                              
+                              
+
+                         </td>
+                    </tr>
+              </table>
+
+              <div id="content3">
+                <button onclick="addRadio()">Click Here To Create a Radio</button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>        
+        </li>
+       <li class="list-group-item">
+      <!-- RadioButton -->
+        <div class="wrap-collabsible">
+            <input id="collapsible3" class="toggle" type="checkbox">
+            <label for="collapsible3" class="lbl-toggle" tabindex="0"> Dropdown lists</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+                <table style="width:100%">
+                    <tr>
+                          <td>
+                            <textbox>Dropdown lists allow users to select one item at a time, similarly to radio buttons, but are more compact </textbox>
+                          </td>
+                          <td>
+                             <img src="https://www.usability.gov/sites/default/files/images/u3.jpg" alt="W3Schools.com"> 
+                          </td>
+                          <td>
+                              
+                             <pre class="brush: html">&lt;!-- The second value will be selected initially --&gt;
+&lt;select name="choice"&gt;
+  &lt;option value="first"&gt;First Value&lt;/option&gt; 
+  &lt;option value="second" selected&gt;Second Value&lt;/option&gt;
+  &lt;option value="third"&gt;Third Value&lt;/option&gt;
+&lt;/select&gt;
+</pre>
+
+                         </td>
+                    </tr>
+              </table>
+            </div>
+          </div>
+        </div>        
+        </li>
+
+
+      
+
+      </ul>
+
+
+    </div>
+
+
+    <div id="two" class="col-sm-12">
+      <h3>Navigational Components</h3>
+
+`
+      <ul class="list-group">
+        <li class="list-group-item">
+      <!-- Checkbox -->
+        <div class="wrap-collabsible">
+            <input id="collapsible4" class="toggle" type="checkbox">
+            <label for="collapsible4" class="lbl-toggle" tabindex="0">Search Field</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              
+              <table style="width:100%">
+                    <tr>
+                          <td><div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">Link 1</a>
+                              <a href="#">Link 2</a>
+                              <a href="#">Link 3</a>
+                            </div></td>
+                          <td>
+                            <textbox>A search box allows users to enter a keyword or phrase (query) and submit it to search the index with the intention of getting back the most relevant results.</textbox>
+                          </td>
+                          <td>
+
+                            <label for="site-search">Search the site:</label>
+                            
+
+<!--                              <img src="https://www.usability.gov/sites/default/files/images/u1.jpg" alt="W3Schools.com"> 
+ -->                          </td>
+                          <td>
+                              
+                              <pre class="brush: html">
+  &lt;form&gt;
+  &lt;div&gt;
+    &lt;input type="search" id="mySearch" name="q"
+     placeholder="Search the site..."&gt;
+    &lt;button&gt;Search&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+
+
+
+
+                          </td>
+                    </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        </li>
+
+        <li class="list-group-item">
+      <!-- RadioButton -->
+        <div class="wrap-collabsible">
+            <input id="collapsible5" class="toggle" type="checkbox">
+            <label for="collapsible5" class="lbl-toggle" tabindex="0">Breadcrumb</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+                <table style="width:100%">
+                    <tr>
+                          <td>
+                            <textbox>Breadcrumbs allow users to identify their current location within the system by providing a clickable trail of proceeding pages to navigate by.</textbox>
+                          </td>
+                          <td>
+                             <nav aria-label="Breadcrumb" class="breadcrumb">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Category</a></li>
+        <li><a href="">Sub-Category</a></li>
+        <li><span aria-current="page">Product</span></li>
+    </ul>
+</nav>
+     
+                          </td>
+                              <textarea class="brush: html" rows="10" cols="60">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Category</a></li>
+                <li><a href="">Sub-Category</a></li>
+                <li><span aria-current="page">Product</span></li>
+            </ul>
+            </nav></textarea>
+                              
+                         </td>
+                    </tr>
+              </table>
+            </div>
+          </div>
+        </div>        
+        </li>
+       <li class="list-group-item">
+      <!-- RadioButton -->
+        <div class="wrap-collabsible">
+            <input id="collapsible6" class="toggle" type="checkbox">
+            <label for="collapsible6" class="lbl-toggle" tabindex="0">Pagination</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+                <table style="width:100%">
+                    <tr>
+                          <td>
+                            <textbox>Pagination divides content up between pages, and allows users to skip between pages or go in order through the content. </textbox>
+                          </td>
+                          <td>
+                             <nav aria-label="pagination">
+    <ul class="pagination">
+        <li><a href=""><span aria-hidden="true">«</span><span class="visuallyhidden">previous set of pages</span></a></li>
+        <li><a href=""><span class="visuallyhidden">page </span>1</a></li>
+        <li><a href="" aria-current="page"><span class="visuallyhidden">page </span>2</a></li>
+        <li><a href=""><span class="visuallyhidden">page </span>3</a></li>
+        <li><a href=""><span class="visuallyhidden">page </span>4</a></li>
+        <li><a href=""><span class="visuallyhidden">next set of pages</span><span aria-hidden="true">»</span></a></li>
+    </ul>
+</nav>
+    
+                          </td>
+                          <td>
+                              
+                             <pre>
+
+                              &lt;nav aria-label=&quot;pagination&quot;&gt;
+                              &lt;ul class=&quot;pagination&quot;&gt; 
+                              &lt;li&gt;&lt;a href=&quot;&quot;&gt; &lt;span aria-hidden=&quot;true&quot;&gt;&laquo;&lt;/span&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;previous set of pages&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                               &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;1&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;&quot; aria-current=&quot;page&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;2&lt;/a&gt;&lt;/li&gt; 
+                               &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;3&lt;/a&gt;&lt;/li&gt;
+                               &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;4&lt;/a&gt;&lt;/li&gt; 
+                               &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;next set of pages&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&raquo;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt; 
+                               &lt;/ul&gt; 
+                               &lt;/nav&gt;
+
+                                             </pre>
+                       </td>
+                    </tr>
+              </table>
+            </div>
+          </div>
+        </div>        
+        </li>
+
+
+      
+
+      </ul>
+
+
+
+
+
+    </div>
+    <div id="three" class="col-sm-12">
+      <h3>Information Components</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div id="four" class="col-sm-12">
+      <h3>Containers</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to create a Checkbox.</p>
+
+<div id="content2">
+                <button onclick="addCheckbox()">Try it</button>
+
+              </div>
+
+<script>
+function addCheckbox() {
+  var x = document.createElement("INPUT");
+
+  x.innerHTML='<input type="checkbox" name="love" value="love" id="love">';
+  document.getElementById('content2').appendChild(x);
+}
+
+</script>
+
+</body>
+</html>
